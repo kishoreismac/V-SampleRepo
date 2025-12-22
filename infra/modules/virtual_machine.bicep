@@ -117,7 +117,7 @@ resource nic 'Microsoft.Network/networkInterfaces@2024-07-01' = {
   }
 }
 
-/*================== VIRTUAL MACHINE ==================*/
+/*================= VIRTUAL MACHINE =================*/
 resource vm 'Microsoft.Compute/virtualMachines@2024-11-01' = {
   name: vmName
   location: location
