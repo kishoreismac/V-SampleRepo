@@ -146,7 +146,6 @@ module vnet './modules/vnet.bicep' = {
   scope: az.resourceGroup(rgName)
 }
 
-// (Optional) Create a VM for testing connectivity
 
 module vm './modules/virtual_machine.bicep' = {
   scope: az.resourceGroup(rgName)
