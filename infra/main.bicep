@@ -298,7 +298,6 @@ module Role './modules/rbac.bicep' = {
     principalId: project.outputs.projectPrincipalId
     keyVaultName: keyVault.outputs.keyVaultName
     // aiName: aiName
-    // projectIdentityObjectId: project.outputs.projectWorkspaceId
   }
 }
 
