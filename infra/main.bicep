@@ -94,7 +94,6 @@ param sqlServerURL string
 param hubName string
 @description('Project workspace name (linked to hub)')
 param projectName string
-// e.g. /subscriptions/.../resourceGroups/rg.../providers/Microsoft.Search/searchServices/medical-docs
 
 @description('Name of the Azure Container Registry')
 param containerRegistryname string
@@ -298,6 +297,7 @@ module Role './modules/rbac.bicep' = {
   params: {
     principalId: project.outputs.projectPrincipalId
     keyVaultName: keyVault.outputs.keyVaultName
+    // aiName: aiName
   }
 }
 
