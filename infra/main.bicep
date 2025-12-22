@@ -261,7 +261,7 @@ module ai './modules/ai_services.bicep' = {
   }
 }
 
-// Workspace
+
 module workspace './modules/hub&connections.bicep' = {
   name: 'workspaces'
   scope: az.resourceGroup(rgName)
